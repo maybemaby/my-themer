@@ -22,6 +22,7 @@ export function App() {
     } else {
       ctx.changeMode("material");
     }
+    setPickedColors({});
   };
 
   const handleChange = (label: string, color: string) => {
@@ -30,7 +31,7 @@ export function App() {
 
   return (
     <>
-      <h1>Themer</h1>
+      <h1>Brandon's Simple Themer</h1>
       <h2>Current Mode: {ctx.mode}</h2>
       <button onClick={() => toggleTheme()}>Change</button>
       <main>

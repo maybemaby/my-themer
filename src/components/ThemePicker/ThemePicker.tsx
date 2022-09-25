@@ -31,7 +31,7 @@ export const ThemePicker = ({ onChange }: Props) => {
     <div class={styles.container}>
       {Object.keys(cols.value).map((key, idx) => (
         <div class={styles.category}>
-          <h2>{key}</h2>
+          <h3>{key}</h3>
           {itemLabels.value[idx].map((label) => (
             <ColorPicker
               label={label}
