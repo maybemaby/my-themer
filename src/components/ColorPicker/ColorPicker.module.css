@@ -1,0 +1,43 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  overflow: visible;
+}
+
+.color {
+  width: 60px;
+  border: none;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.picker {
+  z-index: 100;
+  position: absolute;
+  margin-top: 300px;
+  animation: fade-in 150ms linear;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.picker input {
+  padding: 10px 5px;
+}
