@@ -17,9 +17,10 @@
 
 .color {
   width: 60px;
-  border: none;
   height: 60px;
   border-radius: 10px;
+  border: 2px solid var(--color-text);
+  z-index: 3;
 }
 
 .label {
@@ -35,7 +36,6 @@
   animation: fade-in 150ms linear;
   display: flex;
   flex-direction: column;
-  border: none;
 }
 
 .picker input {
